@@ -1,0 +1,114 @@
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; }
+
+/* Navbar */
+.nav-link {
+  color: #9ca3af;
+  transition: color 0.3s;
+}
+.nav-link:hover { color: white; }
+
+/* Buttons */
+.btn-primary {
+  background-color: #0d9488;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn-primary:hover { background-color: #14b8a6; transform: translateY(-2px); }
+.btn-secondary {
+  border: 2px solid #6b7280;
+  color: #d1d5db;
+  padding: 10px 22px;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn-secondary:hover { border-color: white; color: white; }
+
+/* Profile image */
+.profile-img {
+  border: 4px solid #374151;
+  border-radius: 9999px;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+.profile-img:hover { transform: scale(1.05) rotate(2deg); }
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+/* Skill Badges */
+.skill {
+  background-color: #1f2937;
+  color: #d1d5db;
+  padding: 0.6rem 1.3rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+.skill:hover { background-color: #374151; transform: scale(1.1); }
+
+/* Cards */
+.card {
+  background-color: #1f2937;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.4s ease;
+}
+.card:hover {
+  background-color: #111827;
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3);
+}
+
+/* Projects */
+.project-card {
+  background-color: #1f2937;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.project-card:hover img {
+  transform: scale(1.1);
+}
+.btn-show {
+  background-color: #0d9488;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-show:hover {
+  background-color: #14b8a6;
+  transform: translateY(-2px);
+}
+
+/* Contact Links */
+.contact-link {
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.3s;
+}
+.contact-link:hover { color: white; }
