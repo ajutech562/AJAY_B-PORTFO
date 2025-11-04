@@ -1,177 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AJAY B - Portfolio</title>
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+<body>
 
-<body class="bg-gray-900 text-gray-200 antialiased">
-  <!-- Header -->
-  <header class="sticky top-0 z-50 bg-gray-900 bg-opacity-90 backdrop-blur-md shadow-md p-3">
-    <nav class="container mx-auto flex justify-between items-center">
-      <a href="#" class="text-xl font-bold text-teal-400 hover:text-teal-300 transition-colors">
-        &lt;AJAY B /&gt;
-      </a>
-      <div class="space-x-3 md:space-x-6">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </div>
-    </nav>
-  </header>
+    <header class="header">
+        <a href="" class="logo">Ajay B</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <main class="container mx-auto p-4 md:p-6 space-y-12">
-
-    <!-- About -->
-    <section id="about" class="flex flex-col md:flex-row items-center justify-center text-center md:text-left pt-12">
-      <div class="md:w-1/2 md:pr-10 mb-6 md:mb-0">
-        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-2">
-          Hi, I'm <span class="text-teal-400">AJAY B</span>.
-        </h1>
-        <p class="text-xl text-gray-400 mb-3">A passionate technologist with a focus on AI and Data Science.</p>
-        <p class="text-gray-300 max-w-xl mx-auto md:mx-0">
-          Passionate about leveraging technology to solve real-world challenges, with experience in AI and full-stack development. Always eager to work in innovative, growth-oriented environments.
-        </p>
-        <div class="mt-6 flex justify-center md:justify-start gap-3">
-          <a href="#projects" class="btn-primary">View My Work</a>
-          <a href="#contact" class="btn-secondary">Contact</a>
+    <section class="home" id="home">
+        <div class="home-content hidden-element">
+            <img src="20230828075612_IMG_7628.JPG" alt="Developer Avatar" class="hero-image">
+            <h1 class="greeting animate-text">Hi, I'm Ajay </h1>
+            <h2 class="role">Full Stack Developer</h2>
+            <p>
+                Passionate about leveraging technology to solve complex challenges, specializing in Java Full Stack and AI/Data Science. Eager to work in a dynamic environment.
+            </p>
+            <div class="btn-box">
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="AJAY_RESUME_NEW.pdf" class="btn" download>Download CV</a>
+            </div>
         </div>
-      </div>
-      <div class="md:w-1/2 flex justify-center">
-      </div>
     </section>
 
-  <!-- Skills -->
-    <section id="skills">
-      <h2 class="section-title">My Skills</h2>
-      <div class="flex flex-wrap justify-center gap-3 mb-10">
-        <div class="skill"><i class="fab fa-python text-blue-400 mr-2"></i>Python</div>
-        <div class="skill"><i class="fab fa-java text-red-500 mr-2"></i>Java</div>
-        <div class="skill"><i class="fab fa-js text-yellow-400 mr-2"></i>JavaScript</div>
-        <div class="skill"><i class="fab fa-html5 text-orange-500 mr-2"></i>HTML</div>
-        <div class="skill"><i class="fab fa-css3-alt text-blue-500 mr-2"></i>CSS</div>
-        <div class="skill"><i class="fas fa-database text-gray-400 mr-2"></i>SQL</div>
-        <div class="skill"><i class="fab fa-react text-cyan-400 mr-2"></i>React.js</div>
-        <div class="skill"><i class="fas fa-code text-green-500 mr-2"></i>Django</div>
-        <div class="skill"><i class="fas fa-robot text-teal-400 mr-2"></i>AI & ML</div>
-      </div>
 
-      <h3 class="text-2xl font-semibold text-center text-white mt-8 mb-5">Tools & Platforms</h3>
-      <div class="flex flex-wrap justify-center gap-3">
-        <div class="skill"><i class="fas fa-laptop-code text-indigo-400 mr-2"></i>VS Code</div>
-        <div class="skill"><i class="fab fa-git-alt text-red-500 mr-2"></i>Git</div>
-        <div class="skill"><i class="fas fa-chart-bar text-yellow-400 mr-2"></i>Power BI</div>
-        <div class="skill"><i class="fab fa-figma text-purple-500 mr-2"></i>Figma</div>
-        <div class="skill"><i class="fas fa-terminal text-gray-300 mr-2"></i>Eclipse</div>
-        <div class="skill"><i class="fas fa-paint-brush text-blue-600 mr-2"></i>Adobe Photoshop</div>
-        <div class="skill"><i class="fas fa-pen-nib text-pink-400 mr-2"></i>Penpot</div>
-        <div class="skill"><i class="fas fa-project-diagram text-teal-400 mr-2"></i>Miro</div>
-        <div class="skill"><i class="fas fa-cloud text-white mr-2"></i>Vercel</div>
-      </div>
+    <section class="about" id="about">
+        <h2 class="heading hidden-element">About Me</h2>
+        <div class="about-content hidden-element">
+            <p>
+I’m Ajay B, a B.Tech graduate in Artificial Intelligence and Data Science from Dhanalakshmi Srinivasan College of Engineering, Coimbatore. My academic background has given me a strong foundation in programming, problem-solving, and analytical thinking, along with hands-on experience in AI and data-driven projects.            </p>
+            <p>
+                
+Currently, I’m upskilling in Java Full Stack Development, focusing on Java, Spring Boot, React.js, and SQL to build scalable and user-friendly web applications. I aim to grow as a Full Stack Developer and contribute to creating efficient digital solutions.            <div class="about-info">
+                <div class="info-box hidden-element" style="transition-delay: 0.1s;">3+ Years <span>Internship Experience</span></div>
+                <div class="info-box hidden-element" style="transition-delay: 0.2s;">4+ <span>Major Projects Completed</span></div>
+                <div class="info-box hidden-element" style="transition-delay: 0.3s;">AI & Data Science <span>Core Focus</span></div>
+            </div>
+        </div>
     </section>
 
-    <!-- Experience -->
-    <section id="experience">
-      <h2 class="section-title">Experience</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="card">
-          <h3 class="card-title">Intern - TAP Academy</h3>
-          <p class="card-date">Jul 2025 - Present</p>
-          <p class="card-text">Upgrading my skills in Java Full Stack covering Java ,JDBC, HTML,CSS and SQL.</p>
+    <section class="skills" id="skills">
+        <h2 class="heading hidden-element">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card hidden-element" style="transition-delay: 0.1s;">
+                <i class="fa-brands fa-java skill-icon"></i>
+                <h3 class="skill-title">Java / Core Java</h3>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-card hidden-element" style="transition-delay: 0.2s;">
+                <i class="fa-brands fa-python skill-icon"></i>
+                <h3 class="skill-title">Python / Django</h3>
+                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-card hidden-element" style="transition-delay: 0.3s;">
+                <i class="fa-brands fa-react skill-icon"></i>
+                <h3 class="skill-title">React.js</h3>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-card hidden-element" style="transition-delay: 0.4s;">
+                <i class="fa-brands fa-html5 skill-icon"></i>
+                <h3 class="skill-title">HTML / CSS / JS</h3>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-card hidden-element" style="transition-delay: 0.5s;">
+                <i class="fa-solid fa-database skill-icon"></i>
+                <h3 class="skill-title">SQL / JDBC</h3>
+                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-card hidden-element" style="transition-delay: 0.6s;">
+                <i class="fa-solid fa-chart-bar skill-icon"></i>
+                <h3 class="skill-title">AI / ML / Data Science</h3>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
         </div>
-        <div class="card">
-          <h3 class="card-title">Intern - Futura Labs</h3>
-          <p class="card-date">Jul 2024 - Aug 2024</p>
-          <p class="card-text">Developed CRUD features for web apps using Django framework.</p>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Intern - ZanX Technologies</h3>
-          <p class="card-date">Aug 2023</p>
-          <p class="card-text">Worked on ML model development and data preprocessing.</p>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Intern - Torc Infotech</h3>
-          <p class="card-date">Jun 2022</p>
-          <p class="card-text">Explored AI fundamentals and industry workflow.</p>
-        </div>
-      </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-         <div class="project-card group">
-          <img src="Screenshot 2025-10-28 100624.png" alt="Near Pg" />
-          <div class="p-5">
-            <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-teal-400 transition-all">Near PG</h3>
-            <p class="text-gray-400 text-sm mb-4">Developed a platform to help users to find nearby PG accomadations with search filters and location based results.</p>
-            <a href="project1.html" class="btn-show">Show Details</a>
-            
-          </div>
+    <section class="projects" id="projects">
+        <h2 class="heading hidden-element">Featured Projects</h2>
+        <p class="sub-heading hidden-element">A curated collection of my most significant work demonstrating full stack, AI, and design skills.</p>
+        <div class="projects-container">
+            <div class="project-card hidden-element" style="transition-delay: 0.1s;">
+                <img src="django.png" alt="Django Project Image">
+                <h3 class="project-title">Django Web Application</h3>
+                <p>Developed a Django-based application designed to modify and enhance other web apps, showcasing backend development and web integration skills.</p>
+                <a href="#" class="btn project-btn-detail">View Project &rarr;</a>
+            </div>
+            <div class="project-card hidden-element" style="transition-delay: 0.2s;">
+                <img src="apple-music-fitness.webp" alt="UI/UX Project Image">
+                <h3 class="project-title">UI/UX - Workout App Music Integration</h3>
+                <p>Designed intuitive UI screens using Figma to integrate music playback within a fitness app interface, based on user research.</p>
+                <a href="#" class="btn project-btn-detail">View Figma Design &rarr;</a>
+            </div>
+            <div class="project-card hidden-element" style="transition-delay: 0.3s;">
+                <img src="1-s2.0-S1617138125002407-gr4.jpg" alt="AI Project Image">
+                <h3 class="project-title">Wild Animal Detection System (AI)</h3>
+                <p>Uses sensors and AI to detect animals near farms or homes, then activates lights, sounds, or repellents to scare them away and alert people.</p>
+                <a href="#" class="btn project-btn-detail">View Details &rarr;</a>
+            </div>
         </div>
-          
-        <div class="project-card group">
-          <img src="download (1).jpeg" alt="Wild Animal" />
-          <div class="p-5">
-            <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-teal-400 transition-all">Wild Animal Detection</h3>
-            <p class="text-gray-400 text-sm mb-4">Detects animal presence using sensors and triggers automated repellents.</p>
-            <a href="project1.html" class="btn-show">Show Details</a>
-          </div>
-        </div>
-
-        <div class="project-card group">
-          <img src="apple-music-fitness.webp" alt="UI UX" />
-          <div class="p-5">
-            <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-teal-400 transition-all">UI/UX Design-Music Integration App</h3>
-            <p class="text-gray-400 text-sm mb-4">Created user-friendly music integration UI for fitness apps using Figma.</p>
-            <a href="project2.html" class="btn-show">Show Details</a>
-          </div>
-        </div>
-
-        <div class="project-card group">
-          <img src="download.png" alt="Django Project" />
-          <div class="p-5">
-            <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-teal-400 transition-all">Django Web App</h3>
-            <p class="text-gray-400 text-sm mb-4">Built a Django-based web tool to modify and enhance existing web projects.</p>
-            <a href="project3.html" class="btn-show">Show Details</a>
-          </div>
-        </div>
-      </div>
     </section>
-    
 
-    <!-- Contact -->
-    <section id="contact">
-      <h2 class="section-title">Get in Touch</h2>
-      <div class="flex justify-center flex-wrap gap-5 text-lg">
-        <a href="mailto:aju73820@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> aju73820@gmail.com</a>
-        <a href="tel:+919072219632" class="contact-link"><i class="fas fa-phone"></i> +91 90722 19632</a>
-        <a href="https://linkedin.com/in/ajay-b-070a0255a" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/ajay-b-5" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
-      </div>
+    <section class="contact" id="contact">
+        <h2 class="heading hidden-element">Get In Touch</h2>
+        <p class="sub-heading hidden-element">Just want to say hello? Let's connect.</p>
+        <div class="contact-container hidden-element">
+            <form action="#" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                <button type="submit" class="btn send-btn">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>aju73820@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 90722 19632</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Palakkad, Kerala</p>
+                    </div>
+                </div>
+              <div class="follow-me">
+    <h4>Follow Me</h4>
+    <a href="https://www.linkedin.com/in/ajay-b-070a0255a" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="YOUR_GITHUB_PROFILE_URL" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/ajjuuo_/" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+                    
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer class="bg-gray-800 text-center text-gray-500 py-3">
-    © 2025 AJAY B. All rights reserved.
-  </footer>
+    <footer class="footer">
+        <p>&copy; 2025 Ajay B. All rights reserved.</p>
+        <a href="#home" class="back-to-top">Back to top</a>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
