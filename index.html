@@ -1,166 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajay - Full Stack Developer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ajay B — Java Full Stack Developer</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Font Awesome (icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Header -->
     <header class="header">
-        <a href="" class="logo">Ajay B</a>
+        <a class="logo" href="#home">Ajay B</a>
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
+        <button class="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-content hidden-element">
-            <img src="20230828075612_IMG_7628.JPG" alt="Developer Avatar" class="hero-image">
-            <h1 class="greeting animate-text">Hi, I'm Ajay </h1>
-            <h2 class="role">Full Stack Developer</h2>
-            <p>
-                Passionate about leveraging technology to solve complex challenges, specializing in Java Full Stack and AI/Data Science. Eager to work in a dynamic environment.
+    <!-- HOME / HERO -->
+    <section id="home" class="home">
+        <div class="hero-left hidden">
+            <img src="20230828075612_IMG_7628.JPG" alt="Ajay" class="hero-photo">
+        </div>
+
+        <div class="hero-right hidden">
+            <h1 class="hero-title">
+                Hi, I’m <span class="accent">Ajay</span><br/>
+                <span class="subtitle">Java Full Stack Developer</span>
+            </h1>
+            <p class="hero-desc">
+                I build responsive web applications using <strong>Java (Spring Boot)</strong> and <strong>React.js</strong>. 
+                I focus on clean architecture, readable code and great user experience.
             </p>
-            <div class="btn-box">
-                <a href="#contact" class="btn">Hire Me</a>
-                <a href="AJAY_RESUME_NEW.pdf" class="btn" download>Download CV</a>
+
+            <div class="hero-cta">
+                <a href="#contact" class="btn primary">Hire Me</a>
+                <a href="AJAY_RESUME_NEW.pdf" class="btn outline" download>Download CV</a>
+            </div>
+
+            <div class="tech-row">
+                <span class="tech">Java</span>
+                <span class="tech">Spring Boot</span>
+                <span class="tech">React.js</span>
+                <span class="tech">MySQL</span>
+                <span class="tech">HTML • CSS • JS</span>
+                <span class="tech">Git • GitHub</span>
             </div>
         </div>
     </section>
 
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2 class="section-title hidden">About Me</h2>
+        <div class="about-grid">
+            <div class="about-card hidden">
+                <h3>Who I am</h3>
+                <p>
+                    I’m Ajay — a fresher with a B.Tech in Artificial Intelligence & Data Science,
+                    currently focused on Java Full Stack development. I love building web apps
+                    with robust backends and polished frontends.
+                </p>
+            </div>
 
-    <section class="about" id="about">
-        <h2 class="heading hidden-element">About Me</h2>
-        <div class="about-content hidden-element">
-            <p>
-I’m Ajay B, a B.Tech graduate in Artificial Intelligence and Data Science from Dhanalakshmi Srinivasan College of Engineering, Coimbatore. My academic background has given me a strong foundation in programming, problem-solving, and analytical thinking, along with hands-on experience in AI and data-driven projects.            </p>
-            <p>
-                
-Currently, I’m upskilling in Java Full Stack Development, focusing on Java, Spring Boot, React.js, and SQL to build scalable and user-friendly web applications. I aim to grow as a Full Stack Developer and contribute to creating efficient digital solutions.            <div class="about-info">
-                <div class="info-box hidden-element" style="transition-delay: 0.1s;">3+ Years <span>Internship Experience</span></div>
-                <div class="info-box hidden-element" style="transition-delay: 0.2s;">4+ <span>Major Projects Completed</span></div>
-                <div class="info-box hidden-element" style="transition-delay: 0.3s;">AI & Data Science <span>Core Focus</span></div>
+            <div class="about-card hidden">
+                <h3>What I do</h3>
+                <ul class="what-list">
+                    <li>Backend APIs with Spring Boot</li>
+                    <li>Interactive frontends with React.js</li>
+                    <li>Database design & queries (MySQL)</li>
+                    <li>Responsive layouts & performance</li>
+                </ul>
+            </div>
+
+            <div class="about-card stats-card hidden">
+                <div class="stat">
+                    <strong>3+</strong>
+                    <p>Major Projects</p>
+                </div>
+                <div class="stat">
+                    <strong>Academic</strong>
+                    <p>B.Tech — AI & Data Science</p>
+                </div>
+                <div class="stat">
+                    <strong>Open</strong>
+                    <p>To opportunities</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="skills" id="skills">
-        <h2 class="heading hidden-element">My Skills</h2>
-        <div class="skills-container">
-            <div class="skill-card hidden-element" style="transition-delay: 0.1s;">
-                <i class="fa-brands fa-java skill-icon"></i>
-                <h3 class="skill-title">Java / Core Java</h3>
-                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <h2 class="section-title hidden">Skills</h2>
+
+        <div class="skill-grid">
+            <div class="skill-card hidden" data-level="90">
+                <div class="skill-top">
+                    <i class="fa-brands fa-java"></i>
+                    <h4>Java</h4>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="--target:90%"></div>
+                </div>
             </div>
-            <div class="skill-card hidden-element" style="transition-delay: 0.2s;">
-                <i class="fa-brands fa-python skill-icon"></i>
-                <h3 class="skill-title">Python / Django</h3>
-                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+
+            <div class="skill-card hidden" data-level="85">
+                <div class="skill-top">
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                    <h4>Spring Boot</h4>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="--target:85%"></div>
+                </div>
             </div>
-            <div class="skill-card hidden-element" style="transition-delay: 0.3s;">
-                <i class="fa-brands fa-react skill-icon"></i>
-                <h3 class="skill-title">React.js</h3>
-                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+
+            <div class="skill-card hidden" data-level="80">
+                <div class="skill-top">
+                    <i class="fa-brands fa-react"></i>
+                    <h4>React.js</h4>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="--target:80%"></div>
+                </div>
             </div>
-            <div class="skill-card hidden-element" style="transition-delay: 0.4s;">
-                <i class="fa-brands fa-html5 skill-icon"></i>
-                <h3 class="skill-title">HTML / CSS / JS</h3>
-                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+
+            <div class="skill-card hidden" data-level="90">
+                <div class="skill-top">
+                    <i class="fa-brands fa-html5"></i>
+                    <h4>HTML / CSS / JS</h4>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="--target:90%"></div>
+                </div>
             </div>
-            <div class="skill-card hidden-element" style="transition-delay: 0.5s;">
-                <i class="fa-solid fa-database skill-icon"></i>
-                <h3 class="skill-title">SQL / JDBC</h3>
-                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+
+            <div class="skill-card hidden" data-level="85">
+                <div class="skill-top">
+                    <i class="fa-solid fa-database"></i>
+                    <h4>MySQL</h4>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="--target:85%"></div>
+                </div>
             </div>
-            <div class="skill-card hidden-element" style="transition-delay: 0.6s;">
-                <i class="fa-solid fa-chart-bar skill-icon"></i>
-                <h3 class="skill-title">AI / ML / Data Science</h3>
-                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+
+            <div class="skill-card hidden" data-level="80">
+                <div class="skill-top">
+                    <i class="fa-brands fa-github"></i>
+                    <h4>Git / GitHub</h4>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="--target:80%"></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="projects" id="projects">
-        <h2 class="heading hidden-element">Featured Projects</h2>
-        <p class="sub-heading hidden-element">A curated collection of my most significant work demonstrating full stack, AI, and design skills.</p>
-        <div class="projects-container">
-            <div class="project-card hidden-element" style="transition-delay: 0.1s;">
-                <img src="django.png" alt="Django Project Image">
-                <h3 class="project-title">Django Web Application</h3>
-                <p>Developed a Django-based application designed to modify and enhance other web apps, showcasing backend development and web integration skills.</p>
-                <a href="#" class="btn project-btn-detail">View Project &rarr;</a>
-            </div>
-            <div class="project-card hidden-element" style="transition-delay: 0.2s;">
-                <img src="apple-music-fitness.webp" alt="UI/UX Project Image">
-                <h3 class="project-title">UI/UX - Workout App Music Integration</h3>
-                <p>Designed intuitive UI screens using Figma to integrate music playback within a fitness app interface, based on user research.</p>
-                <a href="#" class="btn project-btn-detail">View Figma Design &rarr;</a>
-            </div>
-            <div class="project-card hidden-element" style="transition-delay: 0.3s;">
-                <img src="1-s2.0-S1617138125002407-gr4.jpg" alt="AI Project Image">
-                <h3 class="project-title">Wild Animal Detection System (AI)</h3>
-                <p>Uses sensors and AI to detect animals near farms or homes, then activates lights, sounds, or repellents to scare them away and alert people.</p>
-                <a href="#" class="btn project-btn-detail">View Details &rarr;</a>
-            </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h2 class="section-title hidden">Featured Projects</h2>
+        <p class="projects-sub hidden">Selected projects showing backend + frontend work.</p>
+
+        <div class="projects-grid">
+            <article class="project-card hidden" data-aos="zoom-in">
+                <img src="django.png" alt="Django project image">
+                <div class="project-body">
+                    <h3>Django Web Tool (UI + Integration)</h3>
+                    <p>
+                        A Django-based utility that modifies and enhances web app components.
+                        I handled backend endpoints, template integration and deployment-ready structure.
+                    </p>
+                    <div class="project-footer">
+                        <span class="tech-pill">Django</span>
+                        <a href="#" class="btn small">View Repo</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card hidden" data-aos="zoom-in" style="transition-delay:120ms">
+                <img src="apple-music-fitness.webp" alt="UI project image">
+                <div class="project-body">
+                    <h3>Workout Music UI (Figma → React)</h3>
+                    <p>
+                        Designed UI in Figma and implemented responsive React components to integrate music playback in a fitness flow.
+                    </p>
+                    <div class="project-footer">
+                        <span class="tech-pill">React.js</span>
+                        <a href="#" class="btn small">View Design</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card hidden" data-aos="zoom-in" style="transition-delay:240ms">
+                <img src="1-s2.0-S1617138125002407-gr4.jpg" alt="AI project image">
+                <div class="project-body">
+                    <h3>Wild Animal Detection System</h3>
+                    <p>
+                        Sensor + detection system to alert households when wildlife is nearby. Responsible for data pipeline and alert logic.
+                    </p>
+                    <div class="project-footer">
+                        <span class="tech-pill">Sensors • Backend</span>
+                        <a href="#" class="btn small">Read More</a>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <h2 class="heading hidden-element">Get In Touch</h2>
-        <p class="sub-heading hidden-element">Just want to say hello? Let's connect.</p>
-        <div class="contact-container hidden-element">
-            <form action="#" class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
-                <button type="submit" class="btn send-btn">Send Message</button>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2 class="section-title hidden">Get In Touch</h2>
+        <p class="hidden">Send a message and I will reply by email.</p>
+
+        <div class="contact-container hidden">
+            <!-- FORMSUBMIT (sends email to your inbox) -->
+            <form action="https://formsubmit.co/aju73820@gmail.com" method="POST" class="contact-form" id="contactForm">
+                <!-- optional: prevent captcha, use table layout -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <label class="form-row">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </label>
+
+                <label class="form-row">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </label>
+
+                <label class="form-row">
+                    <textarea name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                </label>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn primary">Send Message</button>
+                    <button type="reset" class="btn outline">Clear</button>
+                </div>
             </form>
 
-            <div class="contact-info">
-                <div class="info-item">
+            <aside class="contact-info">
+                <div class="info">
                     <i class="fas fa-envelope"></i>
                     <div>
                         <h4>Email</h4>
                         <p>aju73820@gmail.com</p>
                     </div>
                 </div>
-                <div class="info-item">
+
+                <div class="info">
                     <i class="fas fa-phone-alt"></i>
                     <div>
                         <h4>Phone</h4>
                         <p>+91 90722 19632</p>
                     </div>
                 </div>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h4>Location</h4>
-                        <p>Palakkad, Kerala</p>
+
+                <div class="info follow">
+                    <h4>Follow</h4>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/ajay-b-070a0255a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ajutech562" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/ajjuuo_/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-              <div class="follow-me">
-    <h4>Follow Me</h4>
-    <a href="https://www.linkedin.com/in/ajay-b-070a0255a" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="YOUR_GITHUB_PROFILE_URL" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.instagram.com/ajjuuo_/" target="_blank"><i class="fab fa-instagram"></i></a>
-</div>
-                    
-            </div>
+
+                <!-- Back to top (not fixed bottom) -->
+                <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
+            </aside>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; 2025 Ajay B. All rights reserved.</p>
-        <a href="#home" class="back-to-top">Back to top</a>
+        <div>© 2025 Ajay B</div>
+        <div class="footer-links">
+            <a href="#projects">Projects</a> • <a href="#contact">Contact</a>
+        </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
